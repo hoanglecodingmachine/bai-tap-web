@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Admin - SPhone Shop</title>
+  <link rel="stylesheet" href="admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="iphone/iphone.png" alt="Logo cửa hàng">
+      </div>
+      <nav>
+        <a href="#"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="#"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="#"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="#"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="#"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="#"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="#"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="#"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="#"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- Nội dung -->
+    <main class="content">
+      <h1 class="page-title">TRANG QUẢN TRỊ CỬA HÀNG ĐIỆN THOẠI SPHONE</h1>
+
+      <div class="stats-container">
+        <div class="stat-card">
+          <i data-lucide="users"></i>
+          <div>
+            <h3>Khách hàng</h3>
+            <p>8</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <i data-lucide="smartphone"></i>
+          <div>
+            <h3>Sản phẩm</h3>
+            <p>18</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <i data-lucide="shopping-cart"></i>
+          <div>
+            <h3>Đơn hàng</h3>
+            <p>7</p>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <i data-lucide="dollar-sign"></i>
+          <div>
+            <h3>Doanh thu</h3>
+            <p>100.050.000.000đ</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
