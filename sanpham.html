@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý sản phẩm</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="iphone/iphone.png" alt="Logo cửa hàng">
+      </div>
+      <nav>
+        <a href="admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="sanpham.html" class="active"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="#"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="#"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="#"><i data-lucide="bar-chart-3"></i> Thống kê</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="#"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="#"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="#"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="action-bar">
+        <div class="dropdown">
+          <button class="dropbtn">Tất cả</button>
+          <div class="dropdown-content">
+            <a href="#">Tất cả</a>
+            <a href="#">iPhone</a>
+            <a href="#">Samsung</a>
+            <a href="#">Khác</a>
+          </div>
+        </div>
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <button class="refresh"><i data-lucide="refresh-cw"></i> Làm mới</button>
+        <button class="add"><i data-lucide="plus"></i> Thêm sản phẩm mới</button>
+      </div>
+
+      <!-- DANH SÁCH SẢN PHẨM -->
+      <div class="product-list">
+
+        <div class="product-card">
+          <img src="iphone/iphone13.png" alt="iPhone 13">
+          <div class="product-info">
+            <h3>iPhone 13</h3>
+            <p>Điện thoại thông minh ra đời năm 2017 với thiết kế tai thỏ nhỏ hơn và màn hình liền hơn.</p>
+            <span class="category">Dòng iPhone</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">12.000.000đ</strong>
+            <div class="buttons">
+              <a href="suasanphamiphone13.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="iphone/iphone14.jpg" alt="iPhone 14">
+          <div class="product-info">
+            <h3>iPhone 14</h3>
+            <p>iPhone 14 bản thường vẫn dùng chip A15 từ iPhone 13, cải thiện nhẹ camera và hiệu năng.</p>
+            <span class="category">Dòng iPhone</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">14.000.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="samsung/s25.jpg" alt="Samsung S25">
+          <div class="product-info">
+            <h3>Samsung S25</h3>
+            <p>Galaxy S25 được hỗ trợ cập nhật bảo mật trong 7 năm, hiệu năng mạnh mẽ và thiết kế cao cấp.</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">25.000.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
