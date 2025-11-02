@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Giỏ hàng - Cua hang dien thoai Sphone</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="iphone/iphone.png"
+          alt="dien thoai thong minh "
+          class="banner-img"
+          height="50"
+          width="50"
+        />
+      </a>
+      <input type="text" placeholder="hay nhap thong tin san pham" />
+      <a href="dangnhap.html">dang xuat</a>
+      <a href="giohang.html">gio hang</a>
+      <a href="thanhtoan.html">thanh toan</a>
+      <a href="admin.html">Dang nhap admin</a>
+    </header>
+
+    <nav>
+      <a href="index.html">trang chu</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">danh muc</a>
+        <div class="dropdown-content">
+          <a href="iphone.html">iphone</a>
+          <a href="samsung.html">sam sung</a>
+          <a href="other.html">cac loai khac</a>
+        </div>
+      </div>
+      <a href="index.html">dieu khoan</a>
+      <a href="index.html">tin tuc</a>
+      <a href="index.html">khuyen mai</a>
+      <a href="index.html">thu cu doi moi</a>
+      <a href="index.html">chinh sach tra gop</a>
+    </nav>
+
+    <main class="content">
+      <h1>🛒 Giỏ hàng của bạn</h1>
+
+      <div style="max-width: 1000px; margin: 20px auto">
+        <table>
+          <thead>
+            <tr style="background: #1a73e8; color: white">
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá (VNĐ)</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+      </div>
+
+      <div class="total" style="max-width: 1000px; margin: 20px auto 0">
+        Tổng cộng: <span id="total-price">0</span> VNĐ
+      </div>
+
+      <div class="checkout" style="max-width: 1000px; margin: 10px auto">
+        <button onclick="checkout()">Thanh toán</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="can-le-trai">
+        <p>thong tin cac chinh sach</p>
+        <ul>
+          <li>chinh sach thay cu doi moi</li>
+          <li>chinh sach doi tra</li>
+          <li>chinh sach tra gop</li>
+          <li>chinh sach mua sam online</li>
+          <li>chinh sach bao hanh</li>
+        </ul>
+      </div>
+      <div class="Can-l;e-giua">
+        <p>Thong tin ve chung toi</p>
+        <h1>
+          chung toi la nhom sinh vien sgu voi mong muon ban dien thoai gia re
+        </h1>
+        <h2>cam on ban da ghe xem</h2>
+      </div>
+      <div class="can-le-phai">
+        <p>lien he chung toi</p>
+        <a href="facebook.com">fb-sphone</a>
+        <a href="instagram.com">instagram</a>
+        <a href="messenger.com">messenger</a>
+      </div>
+    </footer>
+
+    <script>
+      // 🧭 Đọc giỏ hàng từ localStorage (nếu có)
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function renderCart() {
+        const tbody = document.getElementById("cart-body");
+        tbody.innerHTML = "";
+        let total = 0;
+
+        if (cart.length === 0) {
+          tbody.innerHTML =
+            '<tr><td colspan="6" style="padding: 50px; text-align: center;">Giỏ hàng của bạn đang trống!</td></tr>';
+        }
+
+        cart.forEach((item, index) => {
+          const row = document.createElement("tr");
+          const totalItem = item.price * item.quantity;
+          total += totalItem;
+
+          row.innerHTML = `
+            <td><img src="${item.image}" alt="${item.name}"></td>
+            <td>${item.name}</td>
+            <td>${item.price.toLocaleString("vi-VN")}</td>
+            <td><input type="number" min="1" value="${
+              item.quantity
+            }" onchange="updateQuantity(${index}, this.value)"></td>
+            <td>${totalItem.toLocaleString("vi-VN")}</td>
+            <td><button onclick="removeItem(${index})">Xóa</button></td>
+          `;
+          tbody.appendChild(row);
+        });
+
+        document.getElementById("total-price").innerText =
+          total.toLocaleString("vi-VN");
+      }
+
+      function updateQuantity(index, quantity) {
+        // Đảm bảo số lượng là số nguyên dương
+        quantity = parseInt(quantity) || 1;
+        if (quantity < 1) quantity = 1;
+
+        cart[index].quantity = quantity;
+        localStorage.setItem("cart", JSON.stringify(cart));
+        renderCart();
+      }
+
+      function removeItem(index) {
+        cart.splice(index, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        renderCart();
+      }
+
+      function checkout() {
+        if (cart.length === 0) {
+          alert("Giỏ hàng của bạn đang trống!");
+          return;
+        }
+
+        // 📝 Lưu đơn hàng vào key khác để sử dụng cho trang xác nhận/thanh toán
+        localStorage.setItem("order", JSON.stringify(cart));
+
+        // 🧹 Xóa giỏ hàng (tùy chọn, có thể bỏ qua bước này)
+        // localStorage.removeItem("cart");
+
+        // 📍 Chuyển sang trang thanh toán chính
+        window.location.href = "thanhtoan.html";
+      }
+
+      renderCart();
+    </script>
+  </body>
+</html>

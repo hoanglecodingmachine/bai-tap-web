@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Thanh toán và Xác nhận Đơn hàng - Sphone</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      /* CSS tùy chỉnh cho trang xác nhận */
+      .order-container {
+        max-width: 1000px;
+        margin: 20px auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .order-container h1 {
+        color: #28a745; /* Màu xanh lá cho thành công */
+        margin-bottom: 25px;
+      }
+      .order-container h2 {
+        color: #1a73e8;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 5px;
+        margin-top: 20px;
+        font-size: 1.3em;
+        text-align: left;
+      }
+      .order-info p {
+        margin: 8px 0;
+        text-align: left;
+      }
+      .order-info strong {
+        display: inline-block;
+        min-width: 150px;
+      }
+      .order-container table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+      }
+      .order-container thead {
+        background: #1a73e8;
+        color: white;
+      }
+      .order-container th,
+      .order-container td {
+        padding: 12px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+      }
+      .order-container img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+      .final-total-box {
+        text-align: right;
+        margin-top: 20px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #cc0000;
+      }
+      .back-to-home {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .back-to-home a {
+        background-color: #1a73e8;
+        color: white;
+        text-decoration: none;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-weight: bold;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="iphone/iphone.png"
+          alt="dien thoai thong minh "
+          class="banner-img"
+          height="50"
+          width="50"
+        />
+      </a>
+      <input type="text" placeholder="hay nhap thong tin san pham" />
+      <a href="dangnhap.html">dang xuat</a>
+      <a href="giohang.html">gio hang</a>
+      <a href="thanhtoan.html">thanh toan</a>
+      <a href="admin.html">Dang nhap admin</a>
+    </header>
+
+    <nav>
+      <a href="index.html">trang chu</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">danh muc</a>
+        <div class="dropdown-content">
+          <a href="iphone.html">iphone</a>
+          <a href="samsung.html">sam sung</a>
+          <a href="other.html">cac loai khac</a>
+        </div>
+      </div>
+      <a href="index.html">dieu khoan</a>
+      <a href="index.html">tin tuc</a>
+      <a href="index.html">khuyen mai</a>
+      <a href="index.html">thu cu doi moi</a>
+      <a href="index.html">chinh sach tra gop</a>
+    </nav>
+
+    <main class="content">
+      <div class="order-container">
+        <h1>✅ Xác nhận đơn hàng thành công</h1>
+
+        <div class="order-info">
+          <h2>Thông tin nhận hàng (Mô phỏng)</h2>
+          <p><strong>Mã đơn hàng:</strong> #SPHONE_202501</p>
+          <p><strong>Tên khách hàng:</strong> Nguyễn Văn Test</p>
+          <p>
+            <strong>Địa chỉ giao:</strong> 123 Đường SGU, Quận Thanh Toán,
+            TP.HCM
+          </p>
+          <p><strong>Phương thức TT:</strong> Thanh toán khi nhận hàng (COD)</p>
+        </div>
+
+        <h2>Chi tiết sản phẩm</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hình ảnh</th>
+              <th>Tên sản phẩm</th>
+              <th>Giá</th>
+              <th>Số lượng</th>
+              <th>Thành tiền</th>
+            </tr>
+          </thead>
+          <tbody id="order-body"></tbody>
+        </table>
+
+        <div class="final-total-box">
+          Tổng thanh toán: <span id="total">0</span> VNĐ
+        </div>
+
+        <div class="back-to-home">
+          <a href="index.html">Trở về Trang chủ</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="can-le-trai">
+        <p>thong tin cac chinh sach</p>
+        <ul>
+          <li>chinh sach thay cu doi moi</li>
+          <li>chinh sach doi tra</li>
+          <li>chinh sach tra gop</li>
+          <li>chinh sach mua sam online</li>
+          <li>chinh sach bao hanh</li>
+        </ul>
+      </div>
+      <div class="Can-l;e-giua">
+        <p>Thong tin ve chung toi</p>
+        <h1>
+          chung toi la nhom sinh vien sgu voi mong muon ban dien thoai gia re
+        </h1>
+        <h2>cam on ban da ghe xem</h2>
+      </div>
+      <div class="can-le-phai">
+        <p>lien he chung toi</p>
+        <a href="facebook.com">fb-sphone</a>
+        <a href="instagram.com">instagram</a>
+        <a href="messenger.com">messenger</a>
+      </div>
+    </footer>
+
+    <script>
+      const order = JSON.parse(localStorage.getItem("order")) || [];
+      const tbody = document.getElementById("order-body");
+      let total = 0;
+
+      if (order.length === 0) {
+        tbody.innerHTML =
+          '<tr><td colspan="5" style="padding: 50px; color: red;">Không tìm thấy đơn hàng đã xác nhận!</td></tr>';
+      }
+
+      order.forEach((item) => {
+        const tr = document.createElement("tr");
+        const itemTotal = item.price * item.quantity;
+        total += itemTotal;
+
+        tr.innerHTML = `
+        <td><img src="${item.image}" width="60"></td>
+        <td>${item.name}</td>
+        <td>${item.price.toLocaleString("vi-VN")}</td>
+        <td>${item.quantity}</td>
+        <td>${itemTotal.toLocaleString("vi-VN")}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById("total").innerText =
+        total.toLocaleString("vi-VN");
+
+      // Xóa đơn hàng sau khi hiển thị (để tránh hiển thị lại đơn hàng cũ khi refresh)
+      localStorage.removeItem("order");
+    </script>
+  </body>
+</html>
