@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý khách hàng - SPhone Admin</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="index.html"><img src="iphone/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+    <!-- Nội dung chính -->
+    <main class="main-content">
+      <h1 class="page-title">QUẢN LÝ KHÁCH HÀNG</h1>
+
+      <!-- Thanh công cụ -->
+      <div class="action-bar">
+        <div class="dropdown">
+          <button class="dropbtn"><i data-lucide="filter"></i> Tất cả</button>
+          <div class="dropdown-content">
+            <a href="#">Hoạt động</a>
+            <a href="#">Bị khóa</a>
+          </div>
+        </div>
+
+        <input type="text" placeholder="Tìm kiếm mã, tên khách hàng...">
+        <input type="date">
+        <input type="date">
+        <button class="refresh"><i data-lucide="refresh-ccw"></i> Làm mới</button>
+        <button class="add"><i data-lucide="plus"></i> Thêm khách hàng</button>
+      </div>
+
+      <!-- Bảng khách hàng -->
+      <table class="table">
+        <thead>
+          <tr>
+            <th>MÃ KH</th>
+            <th>HỌ VÀ TÊN</th>
+            <th>LIÊN HỆ</th>
+            <th>NGÀY THAM GIA</th>
+            <th>TÌNH TRẠNG</th>
+            <th>THAO TÁC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>KH001</td>
+            <td>Huỳnh Bình</td>
+            <td>0981534215</td>
+            <td>10/4/2024</td>
+            <td><span class="status-blocked">Bị khóa</span></td>
+            <td>
+             <a href="changekhachhang1.html" class="edit"><i data-lucide="pencil"></i></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>KH002</td>
+            <td>Huỳnh Thành</td>
+            <td>0793215534</td>
+            <td>12/4/2024</td>
+            <td><span class="status-active">Hoạt động</span></td>
+            <td>
+               <a href="changekhachhang2.html" class="edit"><i data-lucide="pencil"></i></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>KH003</td>
+            <td>Nguyễn Trinh</td>
+            <td>0912345678</td>
+            <td>20/4/2024</td>
+            <td><span class="status-active">Hoạt động</span></td>
+            <td>
+               <a href="changekhachhang3.html" class="edit"><i data-lucide="pencil"></i></a>
+            </td>
+          </tr>
+
+          <tr>
+            <td>KH004</td>
+            <td>Văn Quang</td>
+            <td>0921842394</td>
+            <td>28/4/2024</td>
+            <td><span class="status-blocked">Bị khóa</span></td>
+            <td>
+               <a href="changekhachhang4.html" class="edit"><i data-lucide="pencil"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
