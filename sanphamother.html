@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý sản phẩm</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="index.html"><img src="iphone/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="action-bar">
+        <div class="dropdown">
+          <button class="dropbtn">Tất cả</button>
+          <div class="dropdown-content">
+            <a href="#">Tất cả</a>
+            <a href="sanphamiphone.html">iPhone</a>
+            <a href="sanphamsamsung.html">Samsung</a>
+            <a href="sanphamother.html">Khác</a>
+          </div>
+        </div>
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <button class="refresh"><i data-lucide="refresh-cw"></i> Làm mới</button>
+        <a href="themsanpham.html">
+        <button class="add"><i data-lucide="plus"></i> Thêm sản phẩm mới</button>
+        </a>
+      </div>
+
+      <!-- DANH SÁCH SẢN PHẨM -->
+      <div class="product-list">
+
+    <div class="product-card">
+          <img src="other/oppoReno14.jpg" alt="OPPO Reno 14 5G">
+          <div class="product-info">
+            <h3>Reno 14 5G</h3>
+            <p>Hỗ trợ 5G, màn hình mượt, camera ổn trong phân khúc.</p>
+            <span class="category">Dòng OPPO</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">11.000.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/xiaomiPOCO.jpg" alt="Xiaomi POCO X7 Pro">
+          <div class="product-info">
+            <h3>Xiaomi POCO X7 Pro</h3>
+            <p>Hiệu năng mạnh trong tầm giá “ngon”, màn hình lớn, sạc nhanh.</p>
+            <span class="category">Dòng XIAOMI</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">9.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/vivoX200.jpg" alt="VIVO X200 Pro">
+          <div class="product-info">
+            <h3>VIVO X200 Pro</h3>
+            <p>Flagship “ảnh” mạnh, chip cao cấp.</p>
+            <span class="category">Dòng VIVO</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">16.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/oneplus.jpg" alt="OnePlus 13 5G">
+          <div class="product-info">
+            <h3>OnePlus 13 5G</h3>
+            <p>Nếu bạn muốn hiệu năng “cao” và trải nghiệm Android gần “gốc”.</p>
+            <span class="category">Dòng OnePlus</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">12.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/honnor.jpg" alt="Honnor X9c">
+          <div class="product-info">
+            <h3>Honnor X9c</h3>
+            <p>Lựa chọn hợp lý nếu ngân sách giới hạn nhưng muốn 5G.</p>
+            <span class="category">Dòng HONNOR</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">7.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/huawei.jpg" alt="Huawei nova 14">
+          <div class="product-info">
+            <h3>Huawei nova 14 ULTRA</h3>
+            <p>Hãng Huawei, mẫu cao cấp của dòng nova/Ultra . thích hợp nếu bạn quan tâm camera và thiết kế.</p>
+            <span class="category">Dòng HUAWEI</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">15.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/pixel.jpg" alt="Pixel 9 Pro">
+          <div class="product-info">
+            <h3>Pixel 9 Pro</h3>
+            <p>Android “nguyên gốc”, camera mạnh, cập nhật ổn định lâu dài.</p>
+            <span class="category">Dòng PIXEL</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">21.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/infinix.jpg" alt="Ifinix Note 50 Pro">
+          <div class="product-info">
+            <h3>Ifinix Note 50 Pro</h3>
+            <p> Smartphone tầm trung “giá tốt” nhưng có nhiều tính năng nổi bật hơn so với giá.</p>
+            <span class="category">Dòng INFINIX</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">6.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="other/realme.jpg" alt="Realme 15">
+          <div class="product-info">
+            <h3>Realme 15</h3>
+            <p>Đây là mẫu mới/tiêu biểu của realme trong phân khúc cao cấp/tầm trung-cao, phù hợp nếu bạn muốn một chiếc smartphone “ngoài Samsung/Apple” mà vẫn mạnh và hiện đại.</p>
+            <span class="category">Dòng REALME</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">9.500.000đ</strong>
+            <div class="buttons">
+              <a href="#" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
