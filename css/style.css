@@ -550,3 +550,429 @@ footer a:hover {
   margin: 30px auto;
   max-width: 1200px;
 }
+.title-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.title-filter h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Dropdown filter container */
+.dropdown-filter {
+  position: relative;
+  display: inline-block;
+}
+
+/* Nút bấm chính */
+.dropbtn-filter {
+  background-color: #0f5bd2; /* màu chủ đạo */
+  color: white;
+  padding: 8px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.dropbtn-filter i {
+  margin-right: 6px;
+}
+
+.dropbtn-filter:hover {
+  background-color: #0c4bb0;
+}
+
+/* Menu dropdown */
+.dropdown-filter-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  top: 110%; /* cách nút 1 chút để dễ hover */
+  left: 0;
+  z-index: 10;
+  transform: translateY(-5px);
+  transition: all 0.25s ease;
+}
+
+/* Hiển thị menu khi hover container (cả nút lẫn nội dung) */
+.dropdown-filter:hover .dropdown-filter-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Các item trong menu */
+.dropdown-filter-content a {
+  display: block;
+  padding: 10px 12px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.dropdown-filter-content a:hover {
+  background-color: #f2f5ff;
+  color: #0f5bd2;
+}
+
+/* ======== Hóa đơn (hoadon.html) ======== */
+main.hoadon {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+main.hoadon h1 {
+  text-align: center;
+  color: #0f5bd2;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+/* ======== Table ======== */
+main.hoadon table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+main.hoadon th,
+main.hoadon td {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+main.hoadon th {
+  background-color: #0f5bd2;
+  color: #fff;
+  font-weight: 600;
+}
+
+main.hoadon td img {
+  width: 80px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ======== Nút "Hủy đơn" ======== */
+main.hoadon .cancel-btn {
+  background-color: #ff3b3b;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+main.hoadon .cancel-btn:hover {
+  background-color: #d62828;
+}
+
+/* ======== Tổng tiền + nút Thanh Toán ======== */
+main.hoadon .total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+main.hoadon .total strong {
+  color: #0f5bd2;
+  font-size: 1.3rem;
+}
+
+main.hoadon .back-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #0f5bd2;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+main.hoadon .back-btn:hover {
+  background-color: #0940a8;
+}
+/* ===== Giao diện chính ===== */
+.thanhtoan-container {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.thanhtoan-container h1 {
+  text-align: center;
+  color: #0f5bd2;
+  margin-bottom: 30px;
+}
+
+/* ===== Địa chỉ giao hàng ===== */
+.delivery-section {
+  margin-bottom: 40px;
+}
+
+.delivery-section h2 {
+  color: #0f5bd2;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.address-option {
+  display: flex;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.saved-address select,
+.new-address textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.address-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.delete-btn {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #d93c3c;
+}
+
+.confirm-btn {
+  background-color: #0f5bd2;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.confirm-btn:hover {
+  background-color: #0d4bb8;
+}
+
+/* ===== Phương thức thanh toán ===== */
+
+.payment-section {
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.payment-section h2 {
+  color: #0f5bd2;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-options a {
+  text-decoration: none;
+  background: #f2f6ff;
+  border: 1px solid #d6e0ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #0f5bd2;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.payment-options a:hover {
+  background-color: #e9f0ff;
+  border-color: #0f5bd2;
+}
+
+.payment-options a.active {
+  background-color: #0f5bd2;
+  color: white;
+  border-color: #0f5bd2;
+}
+
+.payment-desc {
+  background-color: #f9fbff;
+  border-left: 5px solid #0f5bd2;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.payment-desc h3 {
+  color: #0f5bd2;
+  margin-bottom: 8px;
+}
+
+.confirm-payment {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.confirm-btn {
+  background-color: #0f5bd2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.confirm-btn:hover {
+  background-color: #0942a6;
+}
+/* Lớp confirm bao toàn trang */
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f6f8;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Thẻ card chính */
+.card {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 400px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Tiêu đề */
+.card h1 {
+  color: #0f5bd2;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Mô tả nhỏ */
+.card p {
+  color: #555;
+  margin: 6px 0;
+}
+
+/* Thông tin đơn hàng */
+.order-info {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.order-info p {
+  color: #333;
+  font-size: 0.95em;
+}
+
+/* Khu vực nút */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Nút chung */
+.btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* Nút chính */
+.btn.primary {
+  background-color: #0f5bd2;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #0c4bb0;
+}
+
+/* Nút phụ */
+.btn.secondary {
+  background-color: #e0e3e8;
+  color: #333;
+}
+
+.btn.secondary:hover {
+  background-color: #cfd3d9;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

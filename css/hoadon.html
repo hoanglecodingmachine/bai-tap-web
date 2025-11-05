@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hóa đơn - SGUPHONE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="banner/iphone.png" alt="logo" height="50" width="50">
+    </a>
+    <div>
+      <a href="dangnhap.html">Đăng xuất</a>
+      <a href="cart.html">Giỏ hàng</a>
+      <a href="hoadon.html">Hóa đơn</a>
+      <a href="thanhtoan.html">Thanh toán</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Hóa Đơn</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Sản phẩm</th>
+          <th>Tên</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tổng cộng</th>
+          <th>Yêu cầu</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="iphone/iphone15pro.jpg" alt="iPhone 15 Pro"></td>
+          <td>iPhone 15 Pro</td>
+          <td>18.000.000đ</td>
+          <td>2</td>
+          <td>36.000.000đ</td>
+          <td><button class="cancel-btn">Hủy đơn</button></td>
+        </tr>
+        <tr>
+          <td><img src="samsung/samsungS24ULTRA.jpg" alt="Samsung S24 Ultra"></td>
+          <td>Samsung S24 Ultra</td>
+          <td>16.000.000đ</td>
+          <td>1</td>
+          <td>16.000.000đ</td>
+          <td><button class="cancel-btn">Hủy đơn</button></td>
+        </tr>
+        <tr>
+          <td><img src="iphone/iphone17promax.jpg" alt="iPhone 17 Pro Max"></td>
+          <td>iPhone 17 Pro Max</td>
+          <td>38.000.000đ</td>
+          <td>1</td>
+          <td>38.000.000đ</td>
+          <td><button class="cancel-btn">Hủy đơn</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="total">Tổng tiền: <strong>90.000.000đ</strong></p>
+    <button class="back-btn" onclick="window.location.href='index.html'">Quay về trang chủ</button>
+  </main>
+
+</body>
+</html>
