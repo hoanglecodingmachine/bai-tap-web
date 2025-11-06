@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thêm Mới Sản Phẩm</title>
+  <link rel="stylesheet" href="/css/admincss.css" />
+</head>
+<body>
+  <div class="add">
+    <div class="modal-container">
+      <h2>THÊM MỚI SẢN PHẨM</h2>
+      <span class="close-btn">&times;</span>
+
+      <!-- Cột bên trái -->
+      <div class="image-upload">
+        <div class="image-box">
+          <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Ảnh sản phẩm">
+        </div>
+        <button class="upload-btn">Chọn hình ảnh</button>
+      </div>
+
+      <!-- Cột bên phải -->
+      <div class="product-form">
+        <div class="form-group">
+          <label for="name">Tên điện thoại</label>
+          <input type="text" id="name" placeholder="Nhập tên sản phẩm">
+        </div>
+
+        <div class="form-group">
+          <label for="brand">Thương hiệu</label>
+          <select id="brand">
+            <option>Apple</option>
+            <option>Samsung</option>
+            <option>Xiaomi</option>
+            <option>OPPO</option>
+            <option>Khác</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="model">Mẫu máy</label>
+          <input type="text" id="model" placeholder="Nhập mẫu điện thoại">
+        </div>
+
+        <div class="form-group">
+          <label for="price">Giá bán</label>
+          <input type="text" id="price" placeholder="Nhập giá bán">
+        </div>
+
+        <p class="section-title">Thông tin sản phẩm</p>
+        <textarea placeholder="Nhập thông tin chi tiết..."></textarea>
+
+        <p class="section-title">Thông số kỹ thuật</p>
+        <textarea placeholder="Nhập thông số kỹ thuật..."></textarea>
+
+        <button class="submit-btn">Thêm sản phẩm</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

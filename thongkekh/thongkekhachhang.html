@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thống kê khách hàng</title>
+  <link rel="stylesheet" href="../css/admincss.css">
+   <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    
+    <!-- SIDEBAR -->
+     <aside class="sidebar">
+      <div class="logo">
+        <a href="../index.html"><img src="../banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="../sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="../kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="../donhang/donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="../admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="main-content">
+      <div class="page-title">THỐNG KÊ KHÁCH HÀNG</div>
+
+      <!-- Thanh tìm kiếm + lọc ngày -->
+      <div class="filter-bar">
+        <input type="text" class="search-box" placeholder="🔍 Tìm kiếm tên mã, tên khách hàng...">
+        <div class="date-filter">
+          <label for="from-date">Từ</label>
+          <input type="date" id="from-date" value="2024-01-19">
+          <label for="to-date">Đến</label>
+          <input type="date" id="to-date" value="2024-12-30">
+          <button class="btn-filter">Lọc</button>
+        </div>
+      </div>
+
+      <!-- Bảng thống kê khách hàng -->
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Mã KH</th>
+            <th>Tên KH</th>
+            <th>Số lượng mua</th>
+            <th>Doanh thu</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>KH003</td>
+            <td>Nhật Tiến</td>
+            <td>10</td>
+            <td>980.000.000đ</td>
+            <td><a href="thongkekhachhang1.html" class="detail-btn">Chi tiết</a></td>
+          </tr>
+          <tr>
+            <td>KH006</td>
+            <td>Nguyễn Văn A</td>
+            <td>7</td>
+            <td>960.000.000đ</td>
+            <td><a href="thongkekhachhang2.html" class="detail-btn">Chi tiết</a></td>
+          </tr>
+          <tr>
+            <td>KH008</td>
+            <td>Nguyễn Thị Bánh Bèo</td>
+            <td>5</td>
+            <td>840.000.000đ</td>
+            <td><a href="thongkekhachhang3.html" class="detail-btn">Chi tiết</a></td>
+          </tr>
+          <tr>
+            <td>KH004</td>
+            <td>Nguyễn Minh</td>
+            <td>3</td>
+            <td>560.000.000đ</td>
+            <td><a href="thongkekhachhang4.html" class="detail-btn">Chi tiết</a></td>
+          </tr>
+          <tr>
+            <td>KH002</td>
+            <td>Huỳnh Thành</td>
+            <td>2</td>
+            <td>490.000.000đ</td>
+            <td><a href="thongkekhachhang5.html" class="detail-btn">Chi tiết</a></td>
+          </tr>
+            <script>
+    lucide.createIcons();
+  </script>
+        </tbody>
+      </table>
+    </main>
+
+  </div>
+</body>
+</html>

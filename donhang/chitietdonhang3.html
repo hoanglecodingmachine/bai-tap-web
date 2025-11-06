@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết đơn hàng - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- SIDEBAR -->
+   <aside class="sidebar">
+      <div class="logo">
+        <a href="../index.html"><img src="../banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="../sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="../kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="../admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <h1 class="page-title">CHI TIẾT ĐƠN HÀNG</h1>
+
+      <div class="order-detail-container">
+        <!-- BÊN TRÁI: THÔNG TIN ĐƠN -->
+        <div class="order-info">
+          <div class="info-item">
+            <label>Ngày đặt hàng</label>
+            <p>03/06/2025</p>
+          </div>
+          <div class="info-item">
+            <label>Hình thức giao</label>
+            <p>Giao tận nơi</p>
+          </div>
+          <div class="info-item">
+            <label>Người nhận</label>
+            <p>Trần Thị C</p>
+          </div>
+          <div class="info-item">
+            <label>Số điện thoại</label>
+            <p>0956724310</p>
+          </div>
+          <div class="info-item">
+            <label>Thời gian giao</label>
+            <p>8:00 - 12:00 05/06/2025</p>
+          </div>
+          <div class="info-item">
+            <label>Địa chỉ nhận</label>
+            <p>123 Lê Lợi</p>
+          </div>
+          <div class="info-item">
+            <label>Ghi chú</label>
+            <p>Không có ghi chú</p>
+          </div>
+        </div>
+
+        <!-- BÊN PHẢI: SẢN PHẨM -->
+        <div class="order-products">
+          <div class="product-item">
+            <h3>1. Realme 15</h3>
+            <ul>
+              <li>Màn hình AMOLED 6.7 inch FHD+, tần số quét 120Hz hiển thị mượt mà.</li>
+              <li>Chip MediaTek Dimensity 7300, RAM 8GB, bộ nhớ 256GB.</li>
+              <li>Camera chính 64MP, camera selfie 32MP, pin 5000 mAh sạc nhanh 67W.</li>
+              <li>Thiết kế mỏng nhẹ, mặt lưng kính, hỗ trợ 5G đầy đủ.</li>
+              <li>Giá tham khảo: <b>9.999.000 ₫</b> cho bản 256GB tại Việt Nam.</li>
+            </ul>
+          </div>
+
+          <div class="product-item">
+            <h3>2. OnePlus 13 5G</h3>
+            <ul>
+              <li>Màn hình LTPO AMOLED 6.8 inch QHD+, tần số 120Hz, độ sáng cao 3000 nits.</li>
+              <li>Chip Snapdragon 8 Gen 3, RAM 12GB, bộ nhớ 256GB.</li>
+              <li>Hệ thống camera 50MP + 48MP + 64MP do Hasselblad tinh chỉnh.</li>
+              <li>Pin 5400 mAh, sạc nhanh 100W có dây, sạc không dây 50W.</li>
+              <li>Giá tham khảo: <b>12.999.000 ₫</b> cho bản 256GB.</li>
+            </ul>
+          </div>
+
+          <div class="product-item">
+            <h3>3. Pixel 9 Pro</h3>
+            <ul>
+              <li>Màn hình OLED 6.8 inch QHD+, tần số 120Hz, hỗ trợ Always On Display.</li>
+              <li>Chip Google Tensor G4, RAM 12GB, bộ nhớ 256GB.</li>
+              <li>Camera 50MP chính, 48MP tele 5x, 48MP ultrawide – tối ưu xử lý AI.</li>
+              <li>Pin 5050 mAh, sạc nhanh 30W, sạc không dây Qi 2.0.</li>
+              <li>Giá tham khảo: <b>21.999.000 ₫</b>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-btn">
+        <a href="donhang.html"><i data-lucide="arrow-left"></i> Quay lại danh sách đơn hàng</a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

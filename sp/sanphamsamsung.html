@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý sản phẩm</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="../index.html"><img src="../banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="../kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="../donhang/donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="../admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="action-bar">
+        <div class="dropdown">
+          <button class="dropbtn">Tất cả</button>
+          <div class="dropdown-content">
+            <a href="#">Tất cả</a>
+            <a href="sanphamiphone.html">iPhone</a>
+            <a href="sanphamsamsung.html">Samsung</a>
+            <a href="sanphamother.html">Khác</a>
+          </div>
+        </div>
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <button class="refresh"><i data-lucide="refresh-cw"></i> Làm mới</button>
+        <a href="themsanpham.html">
+        <button class="add"><i data-lucide="plus"></i> Thêm sản phẩm mới</button>
+        </a>
+      </div>
+
+      <!-- DANH SÁCH SẢN PHẨM -->
+      <div class="product-list">
+
+    
+        <div class="product-card">
+          <img src="../samsung/samsungA06.jpg" alt="samsung A065g">
+          <div class="product-info">
+            <h3>SamSung A065g</h3>
+            <p>Một mẫu giá rất rẻ của Samsung hỗ trợ 5G, phù hợp người dùng muốn smartphone cơ bản. </p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">3.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../samsung/samsungA16.jpg" alt="samsung A165g">
+          <div class="product-info">
+            <h3>SamSung A165g</h3>
+            <p>Mẫu tầm trung hỗ trợ 5G, phù hợp người dùng muốn một thiết bị tốt hơn nhưng không phải flagship. </p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">6.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../samsung/samsungS25FE.jpg" alt="samsung S25FE">
+          <div class="product-info">
+            <h3>SamSung S25FE</h3>
+            <p>Mẫu “FE” (Fan Edition) của dòng S25, tức là flagship nhưng giá mềm hơn. </p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">16.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../samsung/samsungS25PLUS.jpg" alt="samsung S25 PLUS">
+          <div class="product-info">
+            <h3>SamSung S25 PLUS</h3>
+            <p>Flagship cao cấp của Samsung, kích thước lớn hơn, nhiều tính năng hơn bản tiêu chuẩn.</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">30.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>       
+        <div class="product-card">
+          <img src="../samsung/samsungS24ULTRA.jpg" alt="samsung S24 ULTRA">
+          <div class="product-info">
+            <h3>SamSung S24 ULTRA</h3>
+            <p>Flagship “Ultra” tiền nhiệm (2024) của Samsung, vẫn rất mạnh và giá dễ tiếp cận hơn flagship năm nay</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">18.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../samsung/samsungZFOLD.jpg" alt="samsung Z FOLD">
+          <div class="product-info">
+            <h3>SamSung Z FOLD</h3>
+            <p>Mẫu foldable dạng “mở ra” (tablet nhỏ gọn) — dành cho người muốn sự khác biệt lớn về hình thức.</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">31.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="../samsung/samsungZFILP.jpg" alt="samsung Z FLIP">
+          <div class="product-info">
+            <h3>SamSung Z FLIP</h3>
+            <p>Mẫu foldable dạng “vỏ sò” (gập lại nhỏ gọn) — rất thời trang và tiện mang theo.</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">18.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="../samsung/samsungS22ULTRA.jpg" alt="samsung S22 ULTRA">
+          <div class="product-info">
+            <h3>SamSung S22 ULTRA</h3>
+            <p>Flagship đời 2022 nhưng vẫn mạnh — nếu bạn muốn tiết kiệm hơn nhiều mà vẫn trải nghiệm cao cấp.</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">10.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+    <div class="product-card">
+          <img src="../samsung/samsungA56.jpg" alt="samsung A56 5G">
+          <div class="product-info">
+            <h3>SamSung A56 5G</h3>
+            <p>Mẫu “mid-premium” của dòng A, hỗ trợ 5G mạnh hơn, cấu hình tốt hơn.</p>
+            <span class="category">Dòng Samsung</span>
+          </div>
+          <div class="product-actions">
+            <strong class="price">11.500.000đ</strong>
+            <div class="buttons">
+              <a href="suasanpham.html" class="edit"><i data-lucide="pencil"></i></a>
+              <button class="delete"><i data-lucide="trash-2"></i></button>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -12,7 +12,7 @@
     <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="logo">
-        <a href="index.html"><img src="iphone/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+        <a href="index.html"><img src="banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
       </div>
       <nav>
         <a href="admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
@@ -34,11 +34,13 @@
       <h1 class="page-title">QUẢN LÝ ĐƠN HÀNG</h1>
 
       <div class="action-bar">
-        <select>
-          <option>Tất cả</option>
-          <option>Đã xử lý</option>
-          <option>Chưa xử lý</option>
-        </select>
+            <div class="dropdown">
+          <button class="dropbtn"><i data-lucide="filter"></i> Tất cả</button>
+          <div class="dropdown-content">
+            <a href="xuly.html">Đã xử lý</a>
+            <a href="notxuly.html">Chưa xử lý</a>
+          </div>
+        </div>
 
         <input type="text" placeholder="Tìm kiếm mã đơn, mã khách hàng, tên khách hàng...">
 
@@ -96,6 +98,7 @@
             <td>
              <a href="chitietdonhang3.html" class="edit"><i data-lucide="eye"></i></a>
             </td>
+          </tr>
         </tbody>
       </table>
     </main>

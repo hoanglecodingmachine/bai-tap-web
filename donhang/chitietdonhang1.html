@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết đơn hàng - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- SIDEBAR -->
+   <aside class="sidebar">
+      <div class="logo">
+        <a href="../index.html"><img src="../banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="../sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="../kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="../admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <h1 class="page-title">CHI TIẾT ĐƠN HÀNG</h1>
+
+      <div class="order-detail-container">
+        <!-- BÊN TRÁI: THÔNG TIN ĐƠN -->
+        <div class="order-info">
+          <div class="info-item">
+            <label>Ngày đặt hàng</label>
+            <p>02/06/2025</p>
+          </div>
+          <div class="info-item">
+            <label>Hình thức giao</label>
+            <p>Giao tận nơi</p>
+          </div>
+          <div class="info-item">
+            <label>Người nhận</label>
+            <p>Nhật Tiến</p>
+          </div>
+          <div class="info-item">
+            <label>Số điện thoại</label>
+            <p>0902123876</p>
+          </div>
+          <div class="info-item">
+            <label>Thời gian giao</label>
+            <p>8:00 - 12:00 05/06/2024</p>
+          </div>
+          <div class="info-item">
+            <label>Địa chỉ nhận</label>
+            <p>123 An Dương Vương</p>
+          </div>
+          <div class="info-item">
+            <label>Ghi chú</label>
+            <p>Không có ghi chú</p>
+          </div>
+        </div>
+
+        <!-- BÊN PHẢI: SẢN PHẨM -->
+        <div class="order-products">
+          <div class="product-item">
+            <h3>1. Apple iPhone 17</h3>
+            <ul>
+              <li>Dòng chuẩn mới nhất (2025) của Apple với chip A19, camera 48MP, màn hình ProMotion.</li>
+              <li>Giá tham khảo: ~ 24.999.000 ₫ cho bản 256GB tại Việt Nam.</li>
+              <li>Lý do chọn: nếu bạn muốn thiết bị mới nhất mà chưa cần Pro Max.</li>
+            </ul>
+          </div>
+
+          <div class="product-item">
+            <h3>2. Apple iPhone Air</h3>
+            <ul>
+              <li>Dòng “Air” ra mắt 2025 (thay Plus) với thiết kế mỏng nhẹ, màn hình lớn, cấu hình cao.</li>
+              <li>Giá tham khảo: ~ 31.999.000 ₫ cho bản 256GB.</li>
+              <li>Lý do chọn: nếu bạn ưu tiên thiết bị nhẹ, thiết kế đẹp mà vẫn mạnh.</li>
+            </ul>
+          </div>
+
+          <div class="product-item">
+            <h3>3. Apple iPhone 17 Pro Max</h3>
+            <ul>
+              <li>Dòng cao cấp nhất 2025, cấu hình mạnh, camera tối ưu, vật liệu và kích thước “Pro Max”.</li>
+              <li>Giá tham khảo: ~ 37.999.000 ₫.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-btn">
+        <a href="donhang.html"><i data-lucide="arrow-left"></i> Quay lại danh sách đơn hàng</a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

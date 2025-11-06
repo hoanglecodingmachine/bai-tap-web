@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thống kê sản phẩm - SPhone Shop</title>
+  <link rel="stylesheet" href="../css/admincss.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="../index.html"><img src="../banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="../sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="../kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="../donhang/donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="../admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <h1 class="page-title">THỐNG KÊ SẢN PHẨM</h1>
+
+      <!-- Thanh tìm kiếm + lọc -->
+      <div class="filter-bar">
+        <input type="text" class="search-box" placeholder="Tìm kiếm tên sản phẩm...">
+        <div class="date-filter">
+          <label>Từ</label>
+          <input type="date" value="2024-01-19">
+          <label>Đến</label>
+          <input type="date" value="2024-12-30">
+        </div>
+        <button class="btn-filter">Lọc</button>
+      </div>
+
+      <!-- 3 ô thống kê -->
+      <div class="stats-cards">
+        <div class="card">
+          <h3>Sản phẩm được bán ra</h3>
+          <p class="value">17</p>
+        </div>
+        <div class="card">
+          <h3>Số lượng bán ra</h3>
+          <p class="value">215</p>
+        </div>
+        <div class="card">
+          <h3>Doanh thu</h3>
+          <p class="value">5.280.000.000đ</p>
+        </div>
+      </div>
+
+      <!-- Bảng dữ liệu -->
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>STT</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng bán</th>
+            <th>Doanh thu</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Apple iPhone 17</td><td>35</td><td>874.965.000₫</td><td><a href="chitietthongke1.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>2</td><td>Apple iPhone 17 Pro Max</td><td>22</td><td>835.978.000₫</td><td><a href="chitietthongke2.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>3</td><td>Apple iPhone Air</td><td>18</td><td>575.982.000₫</td><td><a href="chitietthongke3.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>4</td><td>Apple iPhone 16 Pro Max</td><td>14</td><td>363.856.780₫</td><td><a href="chitietthongke4.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>5</td><td>Samsung Galaxy S25 Plus</td><td>10</td><td>299.356.370₫</td><td><a href="chitietthongke5.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>6</td><td>Samsung Galaxy A06 5G</td><td>25</td><td>85.475.000₫</td><td><a href="chitietthongke6.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>7</td><td>OPPO Reno14 F 5G</td><td>12</td><td>135.480.000₫</td><td><a href="chitietthongke7.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>8</td><td>Vivo X200 Pro 5G</td><td>7</td><td>113.330.000₫</td><td><a href="chitietthongke8.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>9</td><td>Xiaomi POCO X7 Pro 5G</td><td>8</td><td>74.000.000₫</td><td><a href="chitietthongke9.html" class="detail-btn">Chi tiết</a></td></tr>
+          <tr><td>10</td><td>Google Pixel 9 Pro</td><td>6</td><td>129.594.000₫</td><td><a href="chitietthongke10.html" class="detail-btn">Chi tiết</a></td></tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

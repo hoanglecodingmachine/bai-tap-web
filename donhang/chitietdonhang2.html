@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết đơn hàng - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="admin-container">
+    <!-- SIDEBAR -->
+     <aside class="sidebar">
+      <div class="logo">
+        <a href="../index.html"><img src="../banner/iphone.png" alt="dien thoai thong minh " class="banner-img" height="50" width="50"> </a>
+      </div>
+      <nav>
+        <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+        <a href="../sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+        <a href="../kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+        <a href="donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+        <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      </nav>
+
+      <div class="bottom-menu">
+        <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+        <a href="../admin.html"><i data-lucide="user-cog"></i> Admin</a>
+        <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <h1 class="page-title">CHI TIẾT ĐƠN HÀNG</h1>
+
+      <div class="order-detail-container">
+        <!-- BÊN TRÁI: THÔNG TIN ĐƠN -->
+        <div class="order-info">
+          <div class="info-item">
+            <label>Ngày đặt hàng</label>
+            <p>02/06/2025</p>
+          </div>
+          <div class="info-item">
+            <label>Hình thức giao</label>
+            <p>Giao tận nơi</p>
+          </div>
+          <div class="info-item">
+            <label>Người nhận</label>
+            <p>Nguyễn Minh</p>
+          </div>
+          <div class="info-item">
+            <label>Số điện thoại</label>
+            <p>123456789</p>
+          </div>
+          <div class="info-item">
+            <label>Thời gian giao</label>
+            <p>13:00 - 24:00 05/06/2025</p>
+          </div>
+          <div class="info-item">
+            <label>Địa chỉ nhận</label>
+            <p>123 Nguyễn Trãi</p>
+          </div>
+          <div class="info-item">
+            <label>Ghi chú</label>
+            <p>Không có ghi chú</p>
+          </div>
+        </div>
+
+        <!-- BÊN PHẢI: SẢN PHẨM -->
+        <div class="order-products">
+          <div class="product-item">
+            <h3>1. Samsung Z Fold 6</h3>
+            <ul>
+              <li>Màn hình chính 7.6 inch QXGA+ AMOLED 2X, tần số quét 120Hz mượt mà.</li>
+              <li>Chip Snapdragon 8 Gen 3 for Galaxy, RAM 12GB, bộ nhớ 256GB.</li>
+              <li>Camera 50MP + 12MP + 10MP, hỗ trợ quay video 8K.</li>
+              <li>Dung lượng pin 4400 mAh, sạc nhanh 25W.</li>
+              <li>Giá bán: <b>31.500.000 ₫</b></li>
+            </ul>
+          </div>
+
+          <div class="product-item">
+            <h3>2. Samsung Z Flip 6</h3>
+            <ul>
+              <li>Màn hình gập dọc 6.7 inch FHD+ AMOLED 2X, tần số 120Hz.</li>
+              <li>Chip Snapdragon 8 Gen 3 for Galaxy, RAM 12GB, bộ nhớ 256GB.</li>
+              <li>Camera kép 50MP + 12MP, pin 4000 mAh, sạc nhanh 25W.</li>
+              <li>Thiết kế nhỏ gọn, sang trọng, nhiều màu trẻ trung.</li>
+              <li>Giá bán: <b>18.500.000 ₫</b></li>
+            </ul>
+          </div>
+
+          <div class="product-item">
+            <h3>3. Samsung Galaxy S25 Plus</h3>
+            <ul>
+              <li>Màn hình 6.7 inch AMOLED 2X QHD+, tần số 120Hz.</li>
+              <li>Chip Snapdragon 8 Gen 3 for Galaxy, RAM 12GB, bộ nhớ 256GB.</li>
+              <li>Camera chính 200MP, ống rộng 12MP, tele 10MP 3x zoom quang học.</li>
+              <li>Pin 4700 mAh, sạc nhanh 45W, thiết kế khung titan cao cấp.</li>
+              <li>Giá bán: <b>30.000.000 ₫</b></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="back-btn">
+        <a href="donhang.html"><i data-lucide="arrow-left"></i> Quay lại danh sách đơn hàng</a>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

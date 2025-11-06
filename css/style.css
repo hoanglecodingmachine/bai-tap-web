@@ -431,81 +431,92 @@ footer a:hover {
   color: #0d47a1;
   transform: translateX(4px);
 }
-/* ---------------- Slider ---------------- */
+/* -------- Banner / Slider (1 ảnh) -------- */
 .slider {
+  position: relative;
   width: 100%;
-  height: 45vh;
+  height: 100vh;
   max-height: 500px;
-  overflow: hidden;
-  position: relative;
   margin: 30px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  background: #000; /* nền đen tạm nếu ảnh chưa load */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+  background: #000;
 }
 
-.slides {
+.banner-img {
   width: 100%;
   height: 100%;
-  position: relative;
-}
-
-.slides input {
-  display: none;
-}
-
-.s1 {
-  display: flex;
-  width: 300%; /* đủ cho 3 ảnh */
-  height: 100%;
-  transition: margin-left 0.6s ease;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-  height: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* 🟢 đổi lại cover cho ảnh full khung */
+  object-fit: cover;
   display: block;
+  transition: transform 1.5s ease, filter 0.8s ease;
 }
 
-/* Khi chọn radio tương ứng, dịch chuyển toàn bộ .s1 */
-#slide1:checked ~ .s1 {
-  margin-left: 0;
-}
-#slide2:checked ~ .s1 {
-  margin-left: -100%;
-}
-#slide3:checked ~ .s1 {
-  margin-left: -200%;
+.slider:hover .banner-img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
 }
 
-/* Thanh điều hướng */
-.navigation {
+/* Overlay nửa trong suốt để dễ đọc chữ */
+.banner-overlay {
   position: absolute;
-  width: 100%;
-  bottom: 15px;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.1));
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  color: #fff;
 }
 
-.bar {
-  width: 40px;
-  height: 10px;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: 0.3s;
+/* Nội dung chữ */
+.banner-text {
+  max-width: 500px;
+  animation: fadeInUp 1s ease;
 }
 
-.bar:hover {
-  background: white;
+.banner-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
+
+.banner-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Nút */
+.banner-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ff4d4f;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.banner-btn:hover {
+  background: #d9363e;
+}
+
+/* Hiệu ứng xuất hiện */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner-text h2 { font-size: 1.5rem; }
+  .banner-text p { font-size: 1rem; }
+  .banner-btn { padding: 8px 16px; font-size: 0.9rem; }
+}
+
 
 /* ---------------- Copyright cuối trang ---------------- */
 .copyright {

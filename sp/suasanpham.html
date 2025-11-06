@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chỉnh Sửa Sản Phẩm</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+</head>
+<body>
+  <div class="sua">
+    <div class="sua-box">
+      <div class="sua-header">
+        <h2>CHỈNH SỬA SẢN PHẨM</h2>
+        <a href="sanpham.html" class="sua-close">&times;</a>
+      </div>
+
+      <div class="sua-content">
+        <!-- Cột trái: ảnh -->
+        <div class="sua-left">
+          
+          <label class="sua-upload">📷 Chọn hình ảnh</label>
+          
+        </div>
+
+        <!-- Cột phải: thông tin -->
+        <div class="sua-right">
+          <label for="tenSP">Tên sản phẩm</label>
+          <input type="text" id="tenSP" placeholder="Nhập tên sản phẩm mới...">
+
+          <label for="dongSP">Dòng sản phẩm</label>
+          <select id="dongSP">
+            <option selected disabled>-- Chọn dòng sản phẩm --</option>
+            <option>iPhone</option>
+            <option>Samsung</option>
+            <option>OPPO</option>
+            <option>Xiaomi</option>
+          </select>
+
+          <label for="mauSP">Mẫu sản phẩm</label>
+          <input type="text" id="mauSP" placeholder="Nhập mẫu sản phẩm (vd: Bản thường, Pro, Max...)">
+
+          <label for="giaSP">Giá bán</label>
+          <input type="text" id="giaSP" placeholder="Nhập giá bán (vd: 14.000.000đ)">
+
+          <label for="moTa">Mô tả sản phẩm</label>
+          <textarea id="moTa" rows="4" placeholder="Nhập mô tả sản phẩm..."></textarea>
+
+          <div class="sua-btns">
+            <a href="sanpham.html" class="sua-save">💾 Lưu thay đổi</a>
+            <a href="sanpham.html" class="sua-cancel">❌ Hủy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
