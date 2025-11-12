@@ -1313,3 +1313,374 @@ body.chitiet-thongke {
   text-align: center;
   text-decoration: none;
 }
+/* === Quản lý giá bán (căn theo main-content) === */
+.control-price {
+  flex: 1;
+  background: #fff;
+  min-height: calc(100vh - 40px); /* chừa padding top-bottom của main-content */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  box-sizing: border-box;
+  margin: 0; /* không tự thêm khoảng trống */
+  width: 100%;
+}
+
+
+/* Tiêu đề trang */
+.control-price .title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+/* Hộp doanh thu */
+.control-price .revenue-box {
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  position: relative;
+  z-index: 1;
+}
+
+.control-price .revenue-box h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.control-price .revenue-box p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Nút chỉnh sửa lợi nhuận */
+.control-price .btn-edit-profit {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.control-price .btn-edit-profit:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.05);
+}
+
+/* Bảng quản lý giá */
+.control-price .price-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.control-price .price-table th,
+.control-price .price-table td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.control-price .price-table th {
+  background: #1f2937;
+  color: #fff;
+  font-weight: 600;
+}
+
+.control-price .price-table td a {
+  display: inline-block;
+  background: #3b82f6;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.control-price .price-table td a:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stock-table th, .stock-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.stock-table th {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.stock-table tr:hover {
+  background: #f3f8ff;
+}
+
+.stock-table td.low {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.stock-table td.ok {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.stock-table td.out {
+  color: #e74c3c;
+  font-weight: 600;
+}
+/* Nút chỉnh sửa trong bảng tồn kho */
+.stock-table .btn-edit-stock {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.stock-table .btn-edit-stock:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+  
+    /* === Trang chỉnh sửa kho === */
+    .fix-inventory {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .fix-inventory h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #2b2f4c;
+      margin-bottom: 25px;
+    }
+
+    .fix-inventory label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .fix-inventory input,
+    .fix-inventory select {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s;
+    }
+
+    .fix-inventory input:focus,
+    .fix-inventory select:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .fix-inventory .btn-back {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    .fix-inventory .btn-back:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .fix-inventory .actions {
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    /* === Chỉnh sửa giá bán (class: fix-price) === */
+    .fix-price {
+      max-width: 600px;
+      margin: 70px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .fix-price h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      color: #2b2f4c;
+      margin-bottom: 25px;
+    }
+
+    .fix-price label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .fix-price input {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border 0.3s ease;
+    }
+
+    .fix-price input:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .fix-price input[readonly] {
+      background-color: #f4f4f4;
+      cursor: not-allowed;
+    }
+
+    .fix-price .sua-btns {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .fix-price .sua-save {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    .fix-price .sua-save:hover {
+      background: #0056b3;
+      transform: scale(1.05);
+    }
+  /* === Đăng nhập Admin (class: log-admin) === */
+.log-admin {
+  max-width: 420px;
+  margin: 100px auto;
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.log-admin h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #2b2f4c;
+  margin-bottom: 25px;
+}
+
+.log-admin label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.log-admin input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.log-admin input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.log-admin .log-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.log-admin .log-home,
+.log-admin .log-login {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.log-admin .log-home {
+  background: #6c757d;
+  color: #fff;
+}
+
+.log-admin .log-home:hover {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+.log-admin .log-login {
+  background: #007bff;
+  color: #fff;
+}
+
+.log-admin .log-login:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chỉnh sửa kho - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="lucide.js"></script>
+
+
+</head>
+
+<body>
+  <div class="fix-inventory">
+    <h2>Chỉnh sửa thông tin tồn kho</h2>
+
+    <form>
+      <label for="product-name">Tên sản phẩm</label>
+      <input type="text" id="product-name" placeholder="Nhập tên sản phẩm...">
+
+      <label for="product-type">Loại sản phẩm</label>
+      <select id="product-type">
+        <option value="">-- Chọn loại --</option>
+        <option value="iphone">iPhone</option>
+        <option value="samsung">Samsung</option>
+        <option value="oppo">OPPO</option>
+        <option value="khac">Hãng khác</option>
+      </select>
+
+      <label for="product-quantity">Số lượng tồn</label>
+      <input type="number" id="product-quantity" placeholder="Nhập số lượng...">
+
+      <label for="product-status">Tình trạng</label>
+      <select id="product-status">
+        <option value="instock">Còn hàng</option>
+        <option value="low">Sắp hết hàng</option>
+        <option value="out">Hết hàng</option>
+      </select>
+
+      <label for="last-import">Nhập gần nhất</label>
+      <input type="date" id="last-import">
+
+      <div class="actions">
+        <a href="QuanLyTonKho.html" class="btn-back">
+          <i data-lucide="arrow-left"></i> Quay lại
+        </a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

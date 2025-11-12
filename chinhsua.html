@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chỉnh sửa giá bán - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="lucide.js"></script>
+
+
+</head>
+
+<body>
+  <div class="fix-price">
+    <h2>Chỉnh sửa thông tin giá bán sản phẩm</h2>
+    <form>
+      <label for="name">Tên sản phẩm</label>
+      <input type="text" id="name" value="Apple iPhone 17">
+
+      <label for="cost">Giá vốn (₫)</label>
+      <input type="number" id="cost" value="20000000">
+
+      <label for="profit">% Lợi nhuận</label>
+      <input type="number" id="profit" value="25">
+
+      <label for="price">Giá bán (₫)</label>
+      <input type="number" id="price" value="25000000" readonly>
+
+      <div class="sua-btns">
+        <a href="QuanLyGiaBan.html" class="sua-save">💾 Lưu thay đổi</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

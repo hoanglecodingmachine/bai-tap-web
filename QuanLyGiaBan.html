@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý giá bán - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="lucide.js"></script>
+</head>
+
+<body>
+  <aside class="sidebar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="banner/iphone.png" alt="SPhone" class="banner-img" height="50" width="50">
+      </a>
+    </div>
+    <nav>
+      <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+      <a href="sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+      <a href="kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+      <a href="donhang/donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+      <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+        <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      <a href="QuanLyGiaBan.html"><i data-lucide="dollar-sign"></i> Quản lý giá bán</a>
+      <a href="QuanLyTonKho.html" class="active"><i data-lucide="package"></i> Quản lý tồn kho</a>
+    </nav>
+
+    <div class="bottom-menu">
+      <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+      <a href="../dangnhapadmin.html"><i data-lucide="user-cog"></i> Admin</a>
+      <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+    </div>
+  </aside>
+  <!-- Main Content -->
+  <div class="main-content">
+     <h1 class="page-title">QUẢN LÝ Giá Bán Sản Phẩm </h1>
+      <div class="action-bar">
+        <div class="dropdown">
+          <button class="dropbtn">Tất cả</button>
+          <div class="dropdown-content">
+            <a href="#">Tất cả</a>
+            <a href="sanphamiphone.html">iPhone</a>
+            <a href="sanphamsamsung.html">Samsung</a>
+            <a href="sanphamother.html">Khác</a>
+          </div>
+        </div>
+        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+        <button class="refresh"><i data-lucide="refresh-cw"></i> Làm mới</button>   
+      </div>
+<main class="control-price">
+ 
+
+  <!-- Hộp doanh thu -->
+  <div class="revenue-box">
+    <div class="info">
+      <h2>Doanh thu: <span>100.050.000.000₫</span></h2>
+      <p>Lợi nhuận hiện tại: <strong>28%</strong></p>
+    </div>
+    <a href="chinhsua.html" class="btn-edit-profit">
+      <i data-lucide="edit"></i> Chỉnh sửa
+    </a>
+  </div>
+
+  <p>Danh sách giá vốn, phần trăm lợi nhuận và giá bán của các sản phẩm.</p>
+
+  <table class="price-table">
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá vốn (₫)</th>
+        <th>% Lợi nhuận</th>
+        <th>Giá bán (₫)</th>
+        <th>Thao tác</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Apple iPhone 17</td>
+        <td>20.000.000</td>
+        <td>25%</td>
+        <td>25.000.000</td>
+        <td><a href="chinhsua.html">Cập nhật</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Apple iPhone 17 Pro Max</td>
+        <td>28.000.000</td>
+        <td>20%</td>
+        <td>33.600.000</td>
+        <td><a href="chinhsua.html">Cập nhật</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Apple iPhone Air</td>
+        <td>17.000.000</td>
+        <td>18%</td>
+        <td>20.060.000</td>
+        <td><a href="chinhsua.html">Cập nhật</a></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Samsung Galaxy S25 Plus</td>
+        <td>15.000.000</td>
+        <td>20%</td>
+        <td>18.000.000</td>
+        <td><a href="chinhsua.html">Cập nhật</a></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
