@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Sửa phiếu nhập hàng - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="/lucide.js"></script>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="banner/iphone.png" alt="SPhone" class="banner-img" height="50" width="50">
+      </a>
+    </div>
+    <nav>
+      <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+      <a href="sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+      <a href="kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+      <a href="donhang/donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+      <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+      <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      <a href="QuanLyGiaBan.html"><i data-lucide="dollar-sign"></i> Quản lý giá bán</a>
+      <a href="QuanLyPhieuNhapHang.html" class="active"><i data-lucide="file-plus"></i> Quản lý phiếu nhập</a>
+      <a href="QuanLyTonKho.html"><i data-lucide="package"></i> Quản lý tồn kho</a>
+    </nav>
+
+    <div class="bottom-menu">
+      <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+      <a href="../dangnhapadmin.html"><i data-lucide="user-cog"></i> Admin</a>
+      <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="fix-add-invent">
+      <h1 class="page-title">SỬA PHIẾU NHẬP HÀNG</h1>
+
+      <form class="invent-form">
+        <label for="maphieu">Mã phiếu:</label>
+        <input type="text" id="maphieu" placeholder="Nhập mã phiếu (VD: PN001)" value="PN001">
+
+        <label for="ngaynhap">Ngày nhập:</label>
+        <input type="date" id="ngaynhap" value="2025-11-10">
+
+        <label for="tensanpham">Tên sản phẩm:</label>
+        <input type="text" id="tensanpham" placeholder="Nhập tên sản phẩm" value="iPhone 14 Pro">
+
+        <label for="gianhap">Giá nhập (VNĐ):</label>
+        <input type="number" id="gianhap" placeholder="Nhập giá nhập" value="18000000">
+
+        <label for="soluong">Số lượng:</label>
+        <input type="number" id="soluong" placeholder="Nhập số lượng" value="10">
+
+        <label for="trangthai">Trạng thái:</label>
+        <select id="trangthai">
+          <option>Chưa hoàn thành</option>
+          <option selected>Đã hoàn thành</option>
+        </select>
+
+        <div class="invent-btns">
+          <a href="QuanLyPhieuNhapHang.html" class="btn-save">Lưu thay đổi</a>
+          <a href="QuanLyPhieuNhapHang.html" class="btn-cancel">Hủy</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

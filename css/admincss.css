@@ -1684,3 +1684,186 @@ body.chitiet-thongke {
   background: #0056b3;
   transform: scale(1.05);
 }
+/* === Quản lý phiếu nhập hàng === */
+.invent-add {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.invent-add .page-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.invent-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.invent-actions input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.invent-actions input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59,130,246,0.2);
+}
+
+.invent-actions .btn-add {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.invent-actions .btn-add:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Bảng phiếu nhập */
+.invent-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.invent-table th, .invent-table td {
+  padding: 12px 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.invent-table th {
+  background: #1f2937;
+  color: #fff;
+}
+
+.invent-table td {
+  background: #fff;
+}
+
+.invent-table tr:hover td {
+  background: #f3f4f6;
+}
+
+.invent-table .btn-edit,
+.invent-table .btn-complete,
+.invent-table .btn-view {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 4px;
+  transition: all 0.3s;
+}
+
+.btn-edit { background: #fbbf24; color: #fff; }
+.btn-edit:hover { background: #f59e0b; }
+
+.btn-complete { background: #10b981; color: #fff; }
+.btn-complete:hover { background: #059669; }
+
+.btn-view { background: #3b82f6; color: #fff; }
+.btn-view:hover { background: #2563eb; }
+
+td.draft { color: #d97706; font-weight: 600; }
+td.done { color: #10b981; font-weight: 600; }
+/* === SỬA PHIẾU NHẬP HÀNG === */
+.fix-add-invent {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.fix-add-invent h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 25px;
+}
+
+.invent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.invent-form label {
+  font-weight: 500;
+  color: #333;
+}
+
+.invent-form input,
+.invent-form select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.invent-form input:focus,
+.invent-form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+}
+
+.invent-btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn-save,
+.btn-cancel {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-save {
+  background: #3b82f6;
+}
+
+.btn-cancel {
+  background: #9ca3af;
+}
+
+.btn-save:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+.btn-cancel:hover {
+  background: #6b7280;
+  transform: scale(1.05);
+}

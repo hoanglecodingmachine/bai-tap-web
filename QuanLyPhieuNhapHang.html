@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý phiếu nhập hàng - SPhone Shop</title>
+  <link rel="stylesheet" href="/css/admincss.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <script src="/lucide.js"></script>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="logo">
+      <a href="../index.html">
+        <img src="banner/iphone.png" alt="SPhone" class="banner-img" height="50" width="50">
+      </a>
+    </div>
+    <nav>
+      <a href="../admin.html"><i data-lucide="home"></i> Trang tổng quan</a>
+      <a href="sp/sanpham.html"><i data-lucide="smartphone"></i> Sản phẩm</a>
+      <a href="kh/khachhanh.html"><i data-lucide="users"></i> Khách hàng</a>
+      <a href="donhang/donhang.html"><i data-lucide="shopping-bag"></i> Đơn hàng</a>
+      <a href="../thongkesp/thongkesanpham.html"><i data-lucide="bar-chart-3"></i> Thống kê sản phẩm</a>
+      <a href="../thongkekh/thongkekhachhang.html"><i data-lucide="bar-chart"></i> Thống kê khách hàng</a>
+      <a href="QuanLyGiaBan.html"><i data-lucide="dollar-sign"></i> Quản lý giá bán</a>
+      <a href="QuanLyPhieuNhapHang.html" class="active"><i data-lucide="file-plus"></i> Quản lý phiếu nhập</a>
+      <a href="QuanLyTonKho.html"><i data-lucide="package"></i> Quản lý tồn kho</a>
+    </nav>
+
+    <div class="bottom-menu">
+      <a href="../index.html"><i data-lucide="house"></i> Trang chủ</a>
+      <a href="../dangnhapadmin.html"><i data-lucide="user-cog"></i> Admin</a>
+      <a href="../dangxuat.html"><i data-lucide="log-out"></i> Đăng xuất</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="invent-add">
+      <h1 class="page-title">QUẢN LÝ PHIẾU NHẬP HÀNG</h1>
+
+      <!-- Thanh tìm kiếm và thêm phiếu nhập -->
+      <div class="invent-actions">
+        <input type="text" placeholder="Tìm phiếu nhập theo ngày hoặc mã sản phẩm...">
+        <button class="btn-add"><i data-lucide="plus-circle"></i> Thêm phiếu nhập</button>
+      </div>
+
+      <!-- Bảng phiếu nhập -->
+      <table class="invent-table">
+        <thead>
+          <tr>
+            <th>Mã phiếu</th>
+            <th>Ngày nhập</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá nhập (VNĐ)</th>
+            <th>Số lượng</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PN001</td>
+            <td>10/11/2025</td>
+            <td>iPhone 14 Pro</td>
+            <td>18,000,000</td>
+            <td>10</td>
+            <td class="draft">Chưa hoàn thành</td>
+            <td>
+              <a href="suanhaphang.html" class="btn-edit">Sửa</a>
+              <a href="#" class="btn-complete">Hoàn thành</a>
+            </td>
+          </tr>
+          <tr>
+            <td>PN002</td>
+            <td>08/11/2025</td>
+            <td>Samsung S25 FE</td>
+            <td>9,000,000</td>
+            <td>20</td>
+            <td class="done">Đã hoàn thành</td>
+            <td>
+              <a href="suanhaphang.html" class="btn-edit">Sửa</a>
+              <a href="#" class="btn-view">Xem</a>
+            </td>
+          </tr>
+          <tr>
+            <td>PN003</td>
+            <td>05/11/2025</td>
+            <td>OPPO Reno 14 5G</td>
+            <td>7,500,000</td>
+            <td>15</td>
+            <td class="draft">Chưa hoàn thành</td>
+            <td>
+              <a href="suanhaphang.html" class="btn-edit">Sửa</a>
+              <a href="#" class="btn-complete">Hoàn thành</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
